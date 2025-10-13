@@ -1,13 +1,12 @@
 // Numeric Val (Temperature)
-// to which convert (F/ C) 
-//operand operator (+, -, *, /, %)
+// to which convert (F/ C/ K) 
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout
 })
-readline.question("Choose your Unit (C/F/K): ", (unit)=>{
+readline.question("Choose your Unit (C/F/K): ", (Unit)=>{
     readline.question("What's the temp.: " , (tmp)=>{
-    
+    let Unit = unit.toUpperCase();
             let temp = parseFloat(tmp);
             if (unit== "C") {
                 console.log("Temperature in Fahrenheit  is :",((9 * temp)/5 + 32));
