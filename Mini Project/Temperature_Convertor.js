@@ -1,6 +1,5 @@
 // Numeric Val (Temperature)
 // to which convert (F/ C/ K) 
-
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout
